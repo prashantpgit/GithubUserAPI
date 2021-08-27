@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Github User Search Via Github API</title>
+  </head>
+  <body>
+    <div class="container">
+      <br /><br/>
+      <h1 style="text-align:center";>
+        Github User Search
+      </h1>
+      <form id="myForm" method="post" autocomplete="off">
+          <div class="form-group">
+            <input type="text" class="form-control" id="search" placeholder="Search Username" required>
+          </div>
+          <div class="form-group">
+			<div class="d-grid gap-2">
+            <button class="btn btn-danger btn-block">
+              Search User
+            </button>
+          </div>
+		  </div>
+      </form>
+      <div id="result"></div>
+    </div>
+  </body>
+  <script src="searchuser.js"></script>
+</html>
