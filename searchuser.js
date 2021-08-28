@@ -13,13 +13,15 @@ form.addEventListener('submit', function(e){
 
     document.getElementById("result").innerHTML=`
     <a target="_blank" href="https://www.github.com/${realName}" class="link-danger">
-	<img src="${data.avatar_url}"/><br>
-	<br>View Github Profile
-	</a><br/><br/>
-    <p>Name : ${data.name}</p>
-	<p>Bio : ${data.bio}</p>
-	<p>Followers : ${data.followers}</p>
-	<p>Following : ${data.following}</p>
+	<img src="${data.avatar_url} class="card-img-top""/><br>
+	<div class="card-body" style="background-color:#000000; color:#7fffd4;">
+		<br>View Github Profile
+		</a><br/><br/>
+		<p>Name : ${data.name}</p>
+		<p>Bio : ${data.bio}</p>
+		<p>Followers : ${data.followers}</p>
+		<p>Following : ${data.following}</p>
+	</div>
     `
   })
 });
